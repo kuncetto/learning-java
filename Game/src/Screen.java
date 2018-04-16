@@ -14,15 +14,15 @@ public class Screen {
         cat.print();
 
         cat.pointInDirection(180); // down
-        cat.move(50); // x: 100 y: 0
+        cat.move(50); // x: 100 y: -50
         cat.print();
 
         cat.pointInDirection(-90); // left
-        cat.move(25); // x: 100 y: 0
+        cat.move(25); // x: 75 y: -50
         cat.print();
 
         cat.pointInDirection(0); // up
-        cat.move(75); // x: 100 y: 0
+        cat.move(75); // x: 100 y: 25
         cat.print();
 
         cat.say("Hello, world!");
