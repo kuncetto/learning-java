@@ -9,7 +9,20 @@ public class Screen {
         cat.show(); // visible: true
         cat.print();
 
+        cat.pointInDirection(90); // right
         cat.move(100); // x: 100 y: 0
+        cat.print();
+
+        cat.pointInDirection(180); // down
+        cat.move(50); // x: 100 y: 0
+        cat.print();
+
+        cat.pointInDirection(-90); // left
+        cat.move(25); // x: 100 y: 0
+        cat.print();
+
+        cat.pointInDirection(0); // up
+        cat.move(75); // x: 100 y: 0
         cat.print();
 
         cat.say("Hello, world!");

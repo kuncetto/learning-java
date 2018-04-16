@@ -7,11 +7,31 @@ public class Sprite {
     String name;
     boolean visible;
     int size;
+    int direction;
 
     // methods
 
     void move(int steps) {
-        x += steps;
+        if(direction == 0) {
+            // up
+            y += steps;
+        } else if (direction == 90) {
+            // right
+            x += steps;
+        } else if (direction == 180) {
+            // down
+            y -= steps;
+        } else if (direction == -90) {
+            // left
+            x -= steps;
+        } else {
+            // unknown direction
+            System.out.println("I don't know where to move!");
+        }
+    }
+
+    void pointInDirection(int direction) {
+        this.direction = direction;
     }
 
     void goTo(int x, int y) {
